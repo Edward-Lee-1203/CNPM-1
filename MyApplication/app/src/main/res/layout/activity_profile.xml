@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#44b6be">
+
+    <TextView
+        android:id ="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usename: "
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <TextView
+        android:id ="@+id/tvShowUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvUsername"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id ="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tvShowUs"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <TextView
+        android:id ="@+id/tvShowEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email from db"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvShowUs"
+        app:layout_constraintLeft_toRightOf="@id/tvEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id ="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textSize="20dp"
+        app:layout_goneMarginLeft="28dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id ="@+id/edt_PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="24dp"
+        android:layout_marginTop="48dp"
+        android:hint="PhoneNumber"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        />
+
+    <Button
+        android:id="@+id/btn_addProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activiy_login_margintop"
+        android:text="Sava Change"
+        android:textAllCaps="false"
+        android:textColor="#44b6be"
+        android:background ="@drawable/shape_btn_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_PhoneNumber"
+        tools:layout_editor_absoluteX="115dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
